@@ -22,8 +22,6 @@ namespace DatingApp.API.Controllers
             _repo = repo;
         }
 
-
-        [AllowAnonymous]
         [HttpGet]
         public async Task<IActionResult> GetUsers()
         {
@@ -32,7 +30,6 @@ namespace DatingApp.API.Controllers
             return Ok(usersToReturn);
         }
 
-        [AllowAnonymous]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetUser(int id)
         {
