@@ -21,7 +21,6 @@ export class MemberEditComponent implements OnInit {
     }
   }
 
-
   constructor(
     private route: ActivatedRoute,
     private alertify: AlertifyService,

@@ -60,14 +60,11 @@
                                 <input class="form-control" type="text" name="city" [(ngModel)]="user.city" >
                                 <label for="Country">City</label>
                                 <input class="form-control" type="text" name="country" [(ngModel)]="user.Country" >
-
-                            </div>
-
+                             </div>
                         </form>
-
                     </tab>
                     <tab heading="Edit Photos">
-                        <p>working on this... coming soon!</p>
+                        <app-photo-editor [photos]="user.photos"></app-photo-editor>
                     </tab>
                 </tabset>
             </div>
