@@ -44,4 +44,8 @@ export class MemberEditComponent implements OnInit {
       });
   }
 
+  UpdateMainPhoto(photoUrl) {
+    this.user.photoUrl = photoUrl;
+  }
+
 }
